@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-size: cover;
+    background-image: url('img/login.jpg');
+}
+
+
+.container {
+    width: 400px;
+    max-width: 400px;
+    margin: 16px;
+    padding: 32px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    text-align: center;
+}
+.form-title{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.form-input{
+    display: block;
+    width: 100%;
+    padding: 14px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    margin-bottom:4px;
+}
+.form-button{
+    width: 100%;
+    padding: 16px 32px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(17, 160, 17);
+}
+button:hover{
+     background-color:green;
+     font-size: 18px;
+}
+.container,
+.form-input,
+.form-button
+.form-link {
+      font-family: 'Roboto Condensed', sans-serif;
+}

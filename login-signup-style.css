@@ -6,6 +6,7 @@ body {
     justify-content: center;
     font-size: 18px;
     background-size: cover;
+    position:relative;
     background-image: url('img/login.jpg');
 }
 
@@ -16,7 +17,7 @@ body {
     margin: 16px;
     padding: 32px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-    background: #c431b7;
+    background: #ffffff;
     text-align: center;
 }
 .form-title{

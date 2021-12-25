@@ -5,29 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
-    <link rel="stylesheet" href="login-signup-style.css">
+    <link rel="stylesheet" href="signin-signup-style.css">
+    <script src="main.js"></script>
 </head>
 <body>
-    <div class="container">
-        <form class="form" id="createAccount">
-            <h1 class="form-title">Create Account</h1>
-            <div class="form-group">
-                <input type="text" class="form-input" autofocus placeholder="Username">
+    <form action="">
+        <div class="sign-up-container" id="sign-up-container">
+            <div class="sign-up">
+                <h1>Create Account</h1>
+                <input id="sName" class="texts" type="text" placeholder="Name">
+                <label id="labelName"></label>
+                <input id="sLName" class="texts" type="text" placeholder="Last name">
+                <label id="labelLName"></label>
+                <input id="sEmail" class="texts" type="email" placeholder="E-mail">
+                <label id="labelEmail"></label>
+                <input id="sPassword" class="texts" id="pass" type="password" placeholder="Password">
+                <label id="labelPassword"></label>
+                <input id="sCPassword" class="texts" id="confirm" type="password" placeholder="Confirm password">
+                <label id="labelCPassword"></label>
+                <input type="button" value="Create Account" class="login" onclick="signUp()">
+                <a href="signin.html" id="sign-in">Already have an account? Sign in!</a>
             </div>
-            <div class="form-group">
-                <input type="text" class="form-input" autofocus placeholder="Email Address">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-input" autofocus placeholder="Password">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-input" autofocus placeholder="Confirm Password">
-            </div>
-            <button class="form-button" type="submit">Submit</button>
-            <p class="form-text">
-                <a style="font-family: 'Roboto Condensed', sans-serif;" href="Login.html" class="form-link">Already have an account? Sign In</a>
-            </p>
-        </form>
-</div>
+        </div>
+    </form>
 </body>
 </html>

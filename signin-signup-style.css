@@ -1,4 +1,6 @@
+
 body {
+    font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     height: 100vh;
     display: flex;
@@ -6,23 +8,23 @@ body {
     justify-content: center;
     font-size: 18px;
     background-size: cover;
+    position:relative;
     background-image: url('img/login.jpg');
 }
 
 
-.container {
+.sign-in-container,
+.sign-up-container {
     width: 400px;
     max-width: 400px;
     margin: 16px;
     padding: 32px;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-    background: #c431b7;
+    background: #ffffff;
     text-align: center;
+    background: transparent;
 }
-.form-title{
-    font-family: 'Roboto Condensed', sans-serif;
-}
-.form-input{
+
+input {
     display: block;
     width: 100%;
     padding: 14px;
@@ -32,7 +34,7 @@ body {
     background: #eeeeee;
     margin-bottom:4px;
 }
-.form-button{
+.login{
     width: 100%;
     padding: 16px 32px;
     font-weight: bold;
@@ -43,13 +45,7 @@ body {
     cursor: pointer;
     background-color: rgb(17, 160, 17);
 }
-button:hover{
+.login:hover{
      background-color:green;
      font-size: 18px;
-}
-.container,
-.form-input,
-.form-button
-.form-link {
-      font-family: 'Roboto Condensed', sans-serif;
 }

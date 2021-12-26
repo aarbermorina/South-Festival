@@ -26,6 +26,9 @@ body {
 h1{
     font-size: 40px;
 }
+label{
+    color:#ffffff;
+}
 input {
     display: block;
     width: 100%;

@@ -23,7 +23,9 @@ body {
     text-align: center;
     background: transparent;
 }
-
+h1{
+    font-size: 40px;
+}
 input {
     display: block;
     width: 100%;

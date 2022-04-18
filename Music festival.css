@@ -75,12 +75,10 @@ position: relative;
 }
 .text-box
 {
-    width:90%;
+    width:100%;
     color: #fff;
     position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top:50%;
     text-align: center;
 }
 .text-box h1
@@ -383,4 +381,33 @@ table td {
     padding-left: 35px;
    list-style-position: inside;
    list-style-type:circle;
+}
+@media(max-width:768px){
+nav {
+      float: none;
+      text-align: center;
+      display:inline-block;
+    }
+   
+    .text-box h1{
+        font-size: 44px;
+    }
+    .text-box h3{
+        font-size: 22px;
+    }
+    .button{
+        padding:10px 20px;
+    }
+    table{
+      font-size: 15px;
+    }
+     th{
+         width:25%;
+     }
+    .shirit{
+        font-size: 18px;
+    }
+ .image{
+     width:100%;
+ }
 }

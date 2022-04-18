@@ -14,7 +14,7 @@
     background: rgba(0,0,100,0.4);
     height: 100vh;
 
-}
+} 
 .video-background
 {
     position: absolute;
@@ -42,7 +42,6 @@ nav
 }
 .nav-links
 {
-    flex:1;
     text-align: right;
 }
 

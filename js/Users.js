@@ -49,7 +49,7 @@ update.onclick = function() {
 }
 
 function change(){
-  window.location = "http://localhost/WebUBT/Project/FitnessWebsite/pages/Users.php";
+  window.location = "http://localhost/WebUBT/Project/SouthFestival/pages/Users.php";
   
 }
 function updateIF(){

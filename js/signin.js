@@ -2,7 +2,7 @@ const form = document.getElementById('form');
 const signInForm = document.getElementById('formSignIn');
 
 function heh(){
-    alert("Too bad :(");
+    alert("Not good!");
 }
 
 let isAlpha=/^[a-zA-Z\s]+$/;

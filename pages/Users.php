@@ -22,18 +22,20 @@ if(isset($_GET["delete"])){
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../css/Users.css">
+    <link rel="stylesheet" href="../design/Users.css">
     <title>Users</title>
 </head>
 <body onload ="updateIF()">
     <div class="header">
-        <img src="../img/fit-logo.png" alt="Logo">
+        <img src="../img/logo.png" alt="Logo">
         <div class="nav-div">
             <ul>
-                <li><a href="Home.php">Home</a></li>
-                <li><a href="Home.php#about-us">About us</a></li>
-                <li><a href="Tickets.php">Tickets</a></li>
-                <li><a href="Contact-us.php">Contact us</a></li>
+            <li><a style="font-family: 'Roboto Condensed', sans-serif;" href="Home.php">HOME</a></li>
+                <li><a style="font-family: 'Roboto Condensed', sans-serif;" href="#Tickets">TICKETS</a></li>
+                <li><a style="font-family: 'Roboto Condensed', sans-serif;" href="slider.html">LINE-UP</a></li>
+                <li><a style="font-family: 'Roboto Condensed', sans-serif;" >ABOUT US</a></li>
+                <li><a style="font-family: 'Roboto Condensed', sans-serif;" >AFTERMOVIE</a></li>
+                <li><a style="font-family: 'Roboto Condensed', sans-serif;" href="Contact-us.php">CONTACT US</a></li>
                 <?php
                     $navLoggedIn = new Navigation();
                 ?>
@@ -47,7 +49,7 @@ if(isset($_GET["delete"])){
             <li><a href="Users.php" id="dash-nav">Users</a></li>
             <li><a href="Contact.php">Contact</a></li>
             <li><a href="Orders.php">Orders</a></li>
-            <li><a href="MembershipDash.php">Tickets</a></li>
+            <li><a href="TicketsDash.php">Tickets</a></li>
         </ul>
         <form class="form">
             <ul class="commands">
@@ -70,7 +72,7 @@ if(isset($_GET["delete"])){
                         $data = $user->readData();
                         foreach($data as $users): ?>
                         <tr>
-                            <td><?php echo $users['user_Id']; ?></td>
+                            <td><?php echo $users['user_id']; ?></td>
                             <td><?php echo $users['name']; ?></td>
                             <td><?php echo $users['lastName']; ?></td>
                             <td><?php echo $users['email']; ?></td>

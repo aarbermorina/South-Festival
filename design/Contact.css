@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(rgb(244, 194, 107),rgb(244, 199, 120));
+}
+.header img{
+    margin:25px;
+    height:60px;
+    border-radius: 10px;
+    border-color: #212838;
+}
+.nav-div{
+    height: 60px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-div ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    list-style: none;
+    height: 55px;
+    width: max-content;
+}
+.nav-div a{
+    background: linear-gradient(rgb(228, 150, 5),rgb(228, 155, 7));
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    border: solid transparent 2px;
+    border-radius: 5px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: -14px;
+}
+.nav-div li{
+    margin-inline: 20px;
+}
+.nav-div li a:hover{
+    background: rgb(192, 125, 0);
+}
+#dash-nav{
+    background: linear-gradient(rgb(228, 150, 5),rgb(228, 155, 7));
+    border: solid transparent 2px;
+    transition: all 0.5 ease-out;
+}
+.contents{
+    border: solid  transparent 20px;
+    border-bottom: solid transparent 40px;
+    height: max-content;
+    width: calc(100%-40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background: linear-gradient(rgb(204, 167, 104),rgb(197, 158, 80));
+}
+.dashboard-nav{
+    margin-block: 15px;
+    margin-left: 150px;
+    width: 30%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.dashboard-nav>li>a{
+    background: linear-gradient(rgb(228, 155,10),rgb(228, 155, 7));
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    border: solid transparent 2px;
+    border-radius: 5px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+} 
+.commands{
+    width: 12%;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 167px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.commands>li>button{
+    background: linear-gradient(rgb(228, 150, 5),rgb(228, 155, 7));
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    border: solid transparent 2px;
+    border-radius: 5px;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.commands>li>a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    border: solid transparent 2px;
+    border-top: solid #31333b 2px;
+    border-bottom: solid #282a30 2px;
+    border-radius: 5px;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.form{
+    background:(rgb(212, 138, 0));
+    width: 97%;
+    min-height: 800px;
+    align-self: center;
+}
+.table{
+    margin: auto;
+    width: 90%;
+    margin-top: 40px;
+    border: solid rgb(211, 211, 211) 2px;
+    border-collapse: collapse;
+}
+.table th{
+    background-color: rgb(228, 150, 5);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+tbody tr>td{
+    color: rgb(231, 231, 231);
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+tbody>tr{
+    background-color: #31333b;
+    border-top: solid white 2px ;
+}
+.messageBox{
+    width: 40%;
+    padding: 2px;
+}
+.id{
+    width: 5%;
+}
+.fullN{
+    width: 20%;
+}
+.email{
+    width: 20%;
+}
+.title{
+    width: 15%;
+}
+.delete{
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+    height: 44px;
+    width: 240px;
+    border: solid transparent 1px;
+    background: rgb(139, 88, 0);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+#deleteForm{
+    transition: 0.5s;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 13%;
+    padding-left: 37%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.deleteForm{
+    position: sticky;
+    width: 360px;
+    height: 300px;
+    background: rgb(192, 125, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+.deleteId{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 20px;
+    width: 200px;
+    border: solid transparent 1px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    font-weight: 200;
+}
+.close {
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-right: 40px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+    cursor: pointer;
+}
+#headP{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+p{
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 5px;
+}

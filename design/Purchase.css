@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../img/Purchase.jpg);
+}
+.background{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    text-align: center;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid rgb(0, 71, 23);
+    border-radius: 5px;
+}
+h1{
+    font-size: 46px;
+    color: rgb(0, 118, 43);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 5%;
+}
+.confirm>p{
+    font-size: 35px;
+    margin-bottom: 20%;
+    color: rgb(255, 104, 104);
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+input{
+    width: 160px;
+    height: 60px;
+    margin-bottom: 10%;
+    background: linear-gradient(#00cb29,#00cb34);
+    border: solid transparent 2px;
+    border-top: solid #00cb29 2px;
+    border-bottom: solid #00cb29 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 22px;
+}

@@ -1,7 +1,7 @@
 <?php
 require_once '../config/Database.php';
 
-class TicketController{
+class TicketsController{
     private $db;
 
     public function __construct(){
@@ -22,15 +22,15 @@ class TicketController{
         $query->bindParam(':validity',$request['validity']);
         $query->execute();
 
-        return header("Location: ../pages/TicketDash.php");
+        return header("Location: ../pages/TicketsDash.php");
     }
 
     public function removeTicket($request){
-        $query = $this->db->getPDO()->prepare('DELETE FROM tickets WHERE Ticket_id = :id');
+        $query = $this->db->getPDO()->prepare('DELETE FROM tickets WHERE ticket_id = :id');
         $query->bindParam(':id',$request['deleteId']);
         $query->execute();
 
-        return header("Location: ../pages/TicketDash.php");
+        return header("Location: ../pages/TicketsDash.php");
     }
 }
 ?>

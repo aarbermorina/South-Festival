@@ -268,7 +268,7 @@ table td {
       border:0;
       background: darkblue;
       color: #fff;
-      
+      cursor: pointer;
   }
   
   .icons img

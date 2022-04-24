@@ -1,6 +1,5 @@
 <?php
     require_once '../php/navigation.php';
-    require_once '../php/FooterDetails.php';
     session_start();
 ?>
 <html lang="en">
@@ -8,29 +7,28 @@
 <title>South Festival</title>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,600;1,300&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="Music festival.css">
+<link rel="stylesheet" href="../design/Home.css">
 </head>
 <body onload="load()">
       <section class="header">
 
         <video autoplay loop class="video-background" muted plays-inline>
 
-            <source src="img/Video.mp4" type="video/mp4">
+            <source src="../img/Video.mp4" type="video/mp4">
         </video>
 
         <nav>
-        <a href="Home.html"> <img src="img/logo.png" class="logo"></a>
+        <a href="Home.html"> <img src="../img/logo.png" class="logo"></a>
 
         <div class="nav-links">
             <ul>
                 <li><a style="font-family: 'Roboto Condensed', sans-serif;" href="Home.php">HOME</a></li>
-                <li><a style="font-family: 'Roboto Condensed', sans-serif;" href="#Tickets">TICKETS</a></li>
+                <li><a style="font-family: 'Roboto Condensed', sans-serif;" href="Tickets.php">TICKETS</a></li>
                 <li><a style="font-family: 'Roboto Condensed', sans-serif;" href="slider.html">LINE-UP</a></li>
                 <li><a style="font-family: 'Roboto Condensed', sans-serif;" >ABOUT US</a></li>
-                <li><a style="font-family: 'Roboto Condensed', sans-serif;" >STORE</a></li>
+                <li><a style="font-family: 'Roboto Condensed', sans-serif;" >AFTERMOVIE</a></li>
                 <li><a style="font-family: 'Roboto Condensed', sans-serif;" href="#container">FAQ</a></li>
-                <li><a style="font-family: 'Roboto Condensed', sans-serif;" href="Contact.html">CONTACT</a></li>
-                <li><a style="font-family: 'Roboto Condensed', sans-serif;" href="signin.html">SIGN IN</a></li>
+                <li><a style="font-family: 'Roboto Condensed', sans-serif;" href="Contact-us.php">CONTACT US</a></li>
                 <?php
                     $navLoggedIn = new Navigation();
                 ?>
@@ -72,7 +70,7 @@
 </div>  
 
 <div class="image">
-    <img class="image__img" src="img/Dua Lipa.png" height=530 alt="DUA LIPA">
+    <img class="image__img" src="../img/Dua Lipa.png" height=530 alt="DUA LIPA">
     <div class="image__overlay image__overlay--primary">
         <div class="image__title">DUA LIPA</div>
     </div>
@@ -80,7 +78,7 @@
 </div> 
 
 <div class="image">
-    <img class="image__img" src="img/Martin Garrix.png" height=530 alt="MARTIN GARRIX">
+    <img class="image__img" src="../img/Martin Garrix.png" height=530 alt="MARTIN GARRIX">
     <div class="image__overlay image__overlay--primary">
         <div class="image__title">MARTIN GARRIX</div>
     </div>
@@ -88,7 +86,7 @@
 </div> 
 
 <div class="image">
-    <img class="image__img" src="img/Miley Cyrus.png" height=530 alt="MILEY CYRUS">
+    <img class="image__img" src="../img/Miley Cyrus.png" height=530 alt="MILEY CYRUS">
     <div class="image__overlay image__overlay--primary">
         <div class="image__title">MILEY CYRUS</div>
     </div>
@@ -96,7 +94,7 @@
 </div> 
 
 <div class="image">
-    <img class="image__img" src="img/Calvin Harris.png" height=530 alt="CALVIN HARRIS">
+    <img class="image__img" src="../img/Calvin Harris.png" height=530 alt="CALVIN HARRIS">
     <div class="image__overlay image__overlay--primary">
         <div class="image__title">CALVIN HARRIS</div>
     </div>
@@ -231,24 +229,24 @@ border-bottom: 1px solid black;  border-top: 1px solid black; font-family: 'Robo
     <div class="icons">
 
         <a href="https://www.facebook.com" id="facebook" target="_blank">
-            <img src="img/Facebook.png">
+            <img src="../img/Facebook.png">
         </a>
         <a href="https://www.instagram.com" id="instagram" target="_blank">
-            <img src="img/Instagram.png">
+            <img src="../img/Instagram.png">
         </a>
         <a href="https://www.twitter.com" id="twitter" target="_blank">
-            <img src="img/Twitter.png">
+            <img src="../img/Twitter.png">
         </a>
         <a href="https://www.youtube.com" id="youtube" target="_blank">
-            <img src="img/Youtube.png">
+            <img src="../img/Youtube.png">
         </a>
         <a href="mailto:arbermorina35@gmail.com" target="_blank">
-            <img src="img/Mail.png">
+            <img src="../img/Mail.png">
         </a>
     </div>
     <p>© ALL RIGHTS RESERVED</p>
 
 </section>
-
+<script src="../js/Home.js"></script>
 </body>
 </html>

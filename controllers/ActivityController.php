@@ -31,7 +31,7 @@ class ActivityController{
 
     public function orderAdd($name,$lastName,$request){
         $query = $this->db->getPDO()->prepare('INSERT INTO activity (activity) VALUES (:activity)');
-        $added = $name.' '.$lastName.' added a new Order: User Id - '.$request['userId'].', ticket Id - '.$request['ticketId'].'.';
+        $added = $name.' '.$lastName.' added a new Order: User Id - '.$request['userId'].', Ticket Id - '.$request['ticketId'].'.';
         $query->bindParam(':activity',$added);
         $query->execute();
     }

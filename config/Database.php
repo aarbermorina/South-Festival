@@ -7,10 +7,9 @@
                 if(!isset($_SESSION) || empty($_SESSION)){
                     session_start();
                 }
-                
-                $link = new PDO('mysql:host=localhost;dbname=southfestival','root','');
+                $link = new PDO('mysql:host=localhost;dbname=south festival','root','');
                 $this->pdo = $link;
-            }catch(PDOException $exception){
+           }catch(PDOException $exception){
                 die($exception->getMessage());
             }
         }

@@ -9,7 +9,7 @@ class OrdersController{
     }
 
     public function readData(){
-        $query = $this->db->getPDO()->prepare('SELECT * FROM orders o, users u, tickets m WHERE o.ticket_id = m.ticket_id AND o.user_id = u.user_Id');
+        $query = $this->db->getPDO()->prepare('SELECT * FROM orders o, users u, tickets t WHERE o.ticket_id = t.ticket_id AND o.user_id = u.user_Id');
         $query->execute();
 
         return $query->fetchAll();
